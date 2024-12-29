@@ -1,0 +1,46 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'D:/vitis/xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'salon' on host 'dundun' (Windows NT_amd64 version 6.2) on Thu Dec 26 19:22:31 +0700 2024
+INFO: [HLS 200-10] In directory 'C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src'
+Sourcing Tcl script 'C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src/HardwareAcceleratedECC-PointMultiplication/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project HardwareAcceleratedECC-PointMultiplication 
+INFO: [HLS 200-10] Opening project 'C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src/HardwareAcceleratedECC-PointMultiplication'.
+INFO: [HLS 200-1510] Running: set_top Radix2wECC 
+INFO: [HLS 200-1510] Running: add_files module.hpp 
+INFO: [HLS 200-10] Adding design file 'module.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files module.cpp 
+INFO: [HLS 200-10] Adding design file 'module.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files gf2_arithmetic.hpp 
+INFO: [HLS 200-10] Adding design file 'gf2_arithmetic.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files gf2_arithmetic.cpp 
+INFO: [HLS 200-10] Adding design file 'gf2_arithmetic.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb gf2_arith_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'gf2_arith_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src/HardwareAcceleratedECC-PointMultiplication/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: set_directive_top -name Radix2wECC Radix2wECC 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vitis/xilinx/Vivado/2021.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 26 19:22:43 2024...
+INFO: [HLS 200-802] Generated output file HardwareAcceleratedECC-PointMultiplication/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 11.685 seconds; current allocated memory: 443.609 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.709 seconds; peak allocated memory: 1.076 GB.

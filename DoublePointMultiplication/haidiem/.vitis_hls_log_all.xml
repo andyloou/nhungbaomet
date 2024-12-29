@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.2' to 'point_add_2'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:19.566+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.2_Pipeline_VITIS_LOOP_45_18' to 'point_add_2_Pipeline_VITIS_LOOP_45_18'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:19.460+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.2_Pipeline_VITIS_LOOP_45_17' to 'point_add_2_Pipeline_VITIS_LOOP_45_17'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:19.361+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.2_Pipeline_VITIS_LOOP_45_1' to 'point_add_2_Pipeline_VITIS_LOOP_45_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:19.255+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.2_Pipeline_VITIS_LOOP_25_16' to 'point_add_2_Pipeline_VITIS_LOOP_25_16'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:19.176+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.2_Pipeline_VITIS_LOOP_25_1' to 'point_add_2_Pipeline_VITIS_LOOP_25_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:19.086+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1' to 'point_double_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.994+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1_Pipeline_VITIS_LOOP_45_14' to 'point_double_1_Pipeline_VITIS_LOOP_45_14'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.917+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1_Pipeline_VITIS_LOOP_45_13' to 'point_double_1_Pipeline_VITIS_LOOP_45_13'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.824+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1_Pipeline_VITIS_LOOP_45_12' to 'point_double_1_Pipeline_VITIS_LOOP_45_12'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.744+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1_Pipeline_VITIS_LOOP_45_1' to 'point_double_1_Pipeline_VITIS_LOOP_45_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.661+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1_Pipeline_VITIS_LOOP_25_11' to 'point_double_1_Pipeline_VITIS_LOOP_25_11'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.583+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_double.1_Pipeline_VITIS_LOOP_25_1' to 'point_double_1_Pipeline_VITIS_LOOP_25_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.505+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'pow_generic&lt;double>' to 'pow_generic_double_s'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.422+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.1' to 'point_add_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.348+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'bf_mult.2' to 'bf_mult_2'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.273+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'bf_mult.1' to 'bf_mult_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.191+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.1_Pipeline_VITIS_LOOP_45_111' to 'point_add_1_Pipeline_VITIS_LOOP_45_111'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.110+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.1_Pipeline_VITIS_LOOP_45_110' to 'point_add_1_Pipeline_VITIS_LOOP_45_110'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:18.031+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.1_Pipeline_VITIS_LOOP_45_1' to 'point_add_1_Pipeline_VITIS_LOOP_45_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:17.945+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.1_Pipeline_VITIS_LOOP_25_19' to 'point_add_1_Pipeline_VITIS_LOOP_25_19'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:17.863+0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'point_add.1_Pipeline_VITIS_LOOP_25_1' to 'point_add_1_Pipeline_VITIS_LOOP_25_1'." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:17.779+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_17_1' (dpm.cpp:17:29) in function 'Radix2wDPM' more than one sub loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:17.226+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_64_1' (gf2_arithmetic.cpp:23:11) in function 'point_add.1' more than one sub loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:16.592+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_64_1' (gf2_arithmetic.cpp:23:11) in function 'point_add.2' more than one sub loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:16.506+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_64_1' (gf2_arithmetic.cpp:23:11) in function 'point_double' more than one sub loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:16.420+0700" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_64_1' (gf2_arithmetic.cpp:23:11) in function 'point_double.1' more than one sub loop.&#xD;&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-960.html" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:16.343+0700" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:820: variable-indexed range selection may cause suboptimal QoR." projectName="haidiem" solutionName="solution1" date="2024-12-26T19:54:10.774+0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:56:30.042+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="haidiem" solutionName="solution1" date="2024-12-26T19:56:26.035+0700" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

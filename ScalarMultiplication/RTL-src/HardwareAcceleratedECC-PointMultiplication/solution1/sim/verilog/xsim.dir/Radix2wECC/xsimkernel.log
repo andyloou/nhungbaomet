@@ -1,0 +1,7 @@
+Running: xsim.dir/Radix2wECC/xsimk.exe -simmode gui -wdb Radix2wECC.wdb -simrunnum 0 -socket 53833
+Design successfully loaded
+Design Loading Memory Usage: 12060 KB (Peak: 12060 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 977324 KB (Peak: 977324 KB)
+Simulation CPU Usage: 2055499 ms

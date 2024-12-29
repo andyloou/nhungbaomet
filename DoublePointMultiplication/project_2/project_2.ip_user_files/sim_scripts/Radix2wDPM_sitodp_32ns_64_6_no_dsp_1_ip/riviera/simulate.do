@@ -1,0 +1,20 @@
+onbreak {quit -force}
+onerror {quit -force}
+
+asim +access +r +m+Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L floating_point_v7_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip xil_defaultlib.glbl
+
+set NumericStdNoWarnings 1
+set StdArithNoWarnings 1
+
+do {wave.do}
+
+view wave
+view structure
+
+do {Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip.udo}
+
+run -all
+
+endsim
+
+quit -force

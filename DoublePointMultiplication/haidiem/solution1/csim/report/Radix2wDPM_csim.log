@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../dpm_test.cpp in debug mode
+   Compiling ../../../../gf2_arithmetic.cpp in debug mode
+   Compiling ../../../../dpm.cpp in debug mode
+   Generating csim.exe
+
+0x0BA8C7E6E2523EF94CBC1E56FACFEDE24F3F91578
+0x0510F96CBC41CF3BDFA0157E9E8FEE2C605791DB0D
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,2 @@
+Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip.v,verilog,xil_defaultlib,../../../../../haidiem/solution1/impl/ip/tmp.gen/sources_1/ip/Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip/sim/Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

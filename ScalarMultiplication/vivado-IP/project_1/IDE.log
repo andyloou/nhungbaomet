@@ -1,0 +1,18 @@
+23:26:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\vivado-IP\project_1\temp_xsdb_launch_script.tcl
+23:26:33 INFO  : Platform repository initialization has completed.
+23:26:33 INFO  : Registering command handlers for Vitis TCF services
+23:26:37 INFO  : XSCT server has started successfully.
+23:26:41 INFO  : plnx-install-location is set to ''
+23:26:41 INFO  : Successfully done setting XSCT server connection channel  
+23:26:41 INFO  : Successfully done query RDI_DATADIR 
+23:26:41 INFO  : Successfully done setting workspace for the tool. 
+23:30:33 INFO  : Result from executing command 'getProjects': ecc
+23:30:33 INFO  : Result from executing command 'getPlatforms': 
+00:12:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\vivado-IP\project_1\temp_xsdb_launch_script.tcl
+00:12:33 INFO  : XSCT server has started successfully.
+00:12:33 INFO  : plnx-install-location is set to ''
+00:12:33 INFO  : Successfully done setting XSCT server connection channel  
+00:12:33 INFO  : Successfully done setting workspace for the tool. 
+00:12:34 INFO  : Platform repository initialization has completed.
+00:12:34 INFO  : Successfully done query RDI_DATADIR 
+00:12:35 INFO  : Registering command handlers for Vitis TCF services

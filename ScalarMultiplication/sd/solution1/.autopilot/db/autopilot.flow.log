@@ -1,0 +1,185 @@
+INFO-FLOW: Workspace C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1 opened at Mon Dec 16 11:25:16 +0700 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/vitis/xilinx/Vitis_HLS/2021.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/vitis/xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 0.445 sec.
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.105 sec.
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.149 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.614 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 0.656 sec.
+Execute   set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute     create_platform xc7z020clg400-1 -board  
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute     source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.136 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.189 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -hw_syn 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -pre_tcl 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 791.016 MB.
+INFO: [HLS 200-10] Analyzing design file 'RTL-src/module.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling RTL-src/module.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang RTL-src/module.cpp -foptimization-record-file=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot D:/vitis/xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -hls-platform-db-name=D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.cpp.clang.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.cpp.clang.err.log 
+Command       ap_eval done; 0.29 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+Execute       set_directive_top gf2_arithmetic -name=gf2_arithmetic 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/vitis/xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -hls-platform-db-name=D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/clang.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.752 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/.systemc_flag -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.791 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/all.directive.json -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.811 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert -desc constantarray_remove-assert C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.143 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 2 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 2.211 sec.
+Execute         source D:/vitis/xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 2.278 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.762 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.bc -hls-platform-db-name=D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.clang.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 0.887 sec.
+INFO: [HLS 200-10] Analyzing design file 'RTL-src/gf2_arithmetic.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling RTL-src/gf2_arithmetic.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang RTL-src/gf2_arithmetic.cpp -foptimization-record-file=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot D:/vitis/xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -hls-platform-db-name=D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.cpp.clang.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.cpp.clang.err.log 
+Command       ap_eval done; 0.274 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+Execute       set_directive_top gf2_arithmetic -name=gf2_arithmetic 
+Execute       list_core -type functional_unit 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -hls-platform-db-name=D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/clang.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.849 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/.systemc_flag -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.89 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/all.directive.json -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.88 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert -desc constantarray_remove-assert C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.984 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.9 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 1.673 sec.
+Command       clang_tidy done; 1.725 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.767 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.bc -hls-platform-db-name=D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.clang.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 0.971 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.198 seconds; current allocated memory: 1.069 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.g.bc" "C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.g.bc"  
+Execute         ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/module.g.bc C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/gf2_arithmetic.g.bc -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.0.bc > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc -args C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/vitis/xilinx/Vitis_HLS/2021.2/win64/lib/libhlsm_39.bc D:/vitis/xilinx/Vitis_HLS/2021.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed D:/vitis/xilinx/Vitis_HLS/2021.2/win64/lib/libhlsm_39.bc D:/vitis/xilinx/Vitis_HLS/2021.2/win64/lib/libhlsmc++_39.bc -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 2.873 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.876 sec.
+Execute       run_link_or_opt -opt -out C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=gf2_arithmetic -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr D:/vitis/xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=gf2_arithmetic -reflow-float-conversion -o C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/sd/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; error code: 1; 1.109 sec.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'gf2_arithmetic'
+INFO-FLOW: {error: Top function not found: there is no function named 'gf2_arithmetic'}
+Command       run_link_or_opt done; error code: 2; 1.12 sec.
+Command     elaborate done; error code: 2; 19.318 sec.
+Command   csynth_design done; error code: 2; 19.337 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 19.337 seconds; current allocated memory: 322.074 MB.
+Command ap_source done; error code: 1; 20.243 sec.
+Execute cleanup_all 

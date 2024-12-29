@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Dec 26 18:44:28 2024
+# Process ID: 11980
+# Current directory: C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src/HardwareAcceleratedECC-PointMultiplication/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/Radix2wECC/xsim_script.tcl}
+# Log file: C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src/HardwareAcceleratedECC-PointMultiplication/solution1/sim/verilog/xsim.log
+# Journal file: C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/RTL-src/HardwareAcceleratedECC-PointMultiplication/solution1/sim/verilog\xsim.jou
+# Running On: dundun, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17034 MB
+#-----------------------------------------------------------
+source xsim.dir/Radix2wECC/xsim_script.tcl
+source Radix2wECC.tcl

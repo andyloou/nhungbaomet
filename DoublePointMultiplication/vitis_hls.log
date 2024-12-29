@@ -1,0 +1,54 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'D:/vitis/xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'salon' on host 'dundun' (Windows NT_amd64 version 6.2) on Thu Dec 26 19:56:10 +0700 2024
+INFO: [HLS 200-10] In directory 'C:/HardwareAcceleratedECC-PointMultiplication/DoublePointMultiplication'
+Sourcing Tcl script 'C:/HardwareAcceleratedECC-PointMultiplication/DoublePointMultiplication/haidiem/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project haidiem 
+INFO: [HLS 200-10] Opening project 'C:/HardwareAcceleratedECC-PointMultiplication/DoublePointMultiplication/haidiem'.
+INFO: [HLS 200-1510] Running: set_top Radix2wDPM 
+INFO: [HLS 200-1510] Running: add_files dpm.cpp 
+INFO: [HLS 200-10] Adding design file 'dpm.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files dpm.hpp 
+INFO: [HLS 200-10] Adding design file 'dpm.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files gf2_arithmetic.cpp 
+INFO: [HLS 200-10] Adding design file 'gf2_arithmetic.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files gf2_arithmetic.hpp 
+INFO: [HLS 200-10] Adding design file 'gf2_arithmetic.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb dpm_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'dpm_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/HardwareAcceleratedECC-PointMultiplication/DoublePointMultiplication/haidiem/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/HardwareAcceleratedECC-PointMultiplication/DoublePointMultiplication/haidiem/solution1/impl/ip'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vitis/xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Radix2wDPM_dmul_64ns_64ns_64_7_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Radix2wDPM_sitodp_32ns_64_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vitis/xilinx/Vivado/2021.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 26 19:56:30 2024...
+INFO: [HLS 200-802] Generated output file haidiem/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 18.595 seconds; current allocated memory: 391.258 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 19.6 seconds; peak allocated memory: 1.078 GB.

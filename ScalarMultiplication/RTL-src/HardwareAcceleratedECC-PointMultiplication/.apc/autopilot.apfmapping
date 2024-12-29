@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gf2_arithmetic.cpp" path="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src\gf2_arithmetic.cpp"/>
+    <originFiles name="gf2_arithmetic.hpp" path="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src\gf2_arithmetic.hpp"/>
+    <originFiles name="module.cpp" path="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src\module.cpp"/>
+    <originFiles name="module.hpp" path="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src\module.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="gf2_arith_test.cpp" path="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src\gf2_arith_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

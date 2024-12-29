@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+-------------------------------------------------------------
+
+scalar is: 0x020FFE0FFFFFF00FFFE0001FFFF0003E000FFF8000
+5b7fff5a06250ebc5f615bd6b4b844de05e0244a4
+2193ca5ac7fa701f6b4a0d9e7e273c8c37615227c
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

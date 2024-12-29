@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Radix2wDPM" xd:componentRef="Radix2wDPM" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="k1" xd:originalName="k1" xd:direction="in" xd:interfaceRef="k1" xd:busTypeRef="register" xd:dataWidth="166"/>
+  <xd:arg xd:name="k2" xd:originalName="k2" xd:direction="in" xd:interfaceRef="k2" xd:busTypeRef="register" xd:dataWidth="166"/>
+  <xd:arg xd:name="R" xd:originalName="R" xd:direction="in" xd:interfaceRef="R" xd:busTypeRef="register" xd:dataWidth="332"/>
+  <xd:arg xd:name="S" xd:originalName="S" xd:direction="in" xd:interfaceRef="S" xd:busTypeRef="register" xd:dataWidth="332"/>
+  <xd:arg xd:name="*(P)" xd:originalName="P" xd:direction="out" xd:interfaceRef="P" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="332"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="95125" xd:FF="48193" xd:BRAM="0" xd:DSP="36"/>
+</xd:acceleratorMap>

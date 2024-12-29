@@ -1,0 +1,7 @@
+   Build using "D:/vitis/xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_Radix2wECC.cpp
+   Compiling gf2_arithmetic.cpp_pre.cpp.tb.cpp
+   Compiling module.cpp_pre.cpp.tb.cpp
+   Compiling gf2_arith_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_Radix2wECC_ir.ll
+   Generating cosim.tv.exe

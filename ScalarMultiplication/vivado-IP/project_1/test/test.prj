@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="test" location="C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/vivado-IP/project_1/test" platform="C:/HardwareAcceleratedECC-PointMultiplication/ScalarMultiplication/vivado-IP/project_1/ecc/export/ecc/ecc.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="test_system" sysConfig="ecc" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="2da5aff6bf09bb56d01a3465b438e64c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.581674520" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1048483957" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

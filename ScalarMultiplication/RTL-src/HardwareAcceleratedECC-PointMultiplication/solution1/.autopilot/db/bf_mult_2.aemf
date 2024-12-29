@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1735213400625">
+  <ports id="1" name="x_V_read" type="PortType" originalName="x.V" coreId="1702129263" bitwidth="166">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="62" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="81" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="83" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="86" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="87" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="89" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="94" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="97" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="100" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="105" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="106" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="108" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="111" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="112" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="114" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="117" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="120" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="124" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="125" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="128" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="130" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="132" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="133" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="135" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="139" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.8"/>
+  <edges id="152" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="158" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="159" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="160" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="161" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="162" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="163" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="164" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="165" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="166" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="167" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="168" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="169" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="170" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="171" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="172" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="173" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="174" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="175" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="176" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="177" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges source_obj="//@blocks.8/@node_objs.1" sink_obj="//@ports.1"/>
+  <blocks id="16" name="block_16" type="BlockType">
+    <controlOutputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="2" name="i_01" originalName="i" coreId="3877468396" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="tmp_V_1_in_in" originalName="x.V" coreId="1663070068" bitwidth="166" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="tmp_V_1" originalName="tmp.V" coreId="1684632430" bitwidth="166" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="z_V_write_assign" originalName="z.V" coreId="1769418544" bitwidth="166" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="x_V_read_1" originalName="x.V" coreId="3877179960" bitwidth="166" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>x_V_read</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="p_Val2_6_loc" coreId="1633449071" bitwidth="166" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="trunc_ln46" lineNumber="46" fileName="gf2_arithmetic.cpp" fileDirectory=".." rtlName="trunc_ln46_fu_84_p1" coreId="1680154725" contextFuncName="bf_mult" bitwidth="163" opcode="trunc" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="46" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="trunc_ln46_1" lineNumber="46" fileName="gf2_arithmetic.cpp" fileDirectory=".." rtlName="trunc_ln46_1_fu_88_p1" coreId="694428968" contextFuncName="bf_mult" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="46" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="tmp_V" lineNumber="50" originalName="tmp.V" fileName="gf2_arithmetic.cpp" fileDirectory=".." rtlName="tmp_V_fu_92_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="bf_mult" bitwidth="166" opcode="select" m_display="0" m_delay="1.27" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="50" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="z_V_write_assign_write_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="0" contextFuncName="bf_mult" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="tmp_V_1_write_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1886216486" contextFuncName="bf_mult" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp_V_1_in_in_write_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="796092788" contextFuncName="bf_mult" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_01_write_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="3877182592" contextFuncName="bf_mult" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1819243365" contextFuncName="bf_mult" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>50</validLinenumbers>
+      <validLinenumbers>56</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="22" name="_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit" type="BlockType">
+    <controlInputObjs>block_16</controlInputObjs>
+    <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit13</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_54</controlOutputObjs>
+    <controlOutputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i" lineNumber="56" originalName="i" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1" contextFuncName="bf_mult" bitwidth="8" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="tmp_V_1_in_in_load" lineNumber="49" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1818851375" contextFuncName="bf_mult" bitwidth="166" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="49" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="icmp_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." rtlName="icmp_ln56_fu_123_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="bf_mult" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.55" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="540811364" contextFuncName="bf_mult" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split</controlInputObjs>
+      <controlInputObjs>block_54</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>49</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="27" name="_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split" type="BlockType">
+    <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader3.preheader</controlOutputObjs>
+    <controlOutputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split._Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit_crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="tmp_V_3" lineNumber="1026" originalName="tmp.V" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="tmp_V_3_fu_129_p2" coreId="1835363429" contextFuncName="operator_ls_assign_32" bitwidth="166" opcode="shl" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="1026" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="operator&amp;lt;&amp;lt;=&amp;lt;32&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="tmp" lineNumber="819" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" fileDirectory=".." rtlName="tmp_reg_250" coreId="544435055" contextFuncName="operator_bool" bitwidth="1" opcode="bitselect" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" linenumber="819" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="operator bool"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln58" lineNumber="58" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1008755749" contextFuncName="bf_mult" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="58" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split._Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit_crit_edge</controlInputObjs>
+      <controlInputObjs>.preheader3.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h">
+      <validLinenumbers>819</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>58</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>1026</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="30" name="_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split._Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit_crit_edge" type="BlockType">
+    <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp_V_1_in_in_write_ln58" lineNumber="58" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1931812968" contextFuncName="bf_mult" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="58" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln58" lineNumber="58" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="1819243365" contextFuncName="bf_mult" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="58" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>58</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="33" name=".preheader3.preheader" type="BlockType">
+    <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln1026" lineNumber="1026" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="grp_bf_mult_2_Pipeline_VITIS_LOOP_33_1_fu_62" coreId="3877474808" contextFuncName="operator_ls_assign_32" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="1.58" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="1026" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="operator&amp;lt;&amp;lt;=&amp;lt;32&amp;gt;"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>bf_mult_2_Pipeline_VITIS_LOOP_33_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln0" coreId="1931944047" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>1026</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name="_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit" type="BlockType">
+    <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split._Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit_crit_edge</controlInputObjs>
+    <controlInputObjs>.preheader3.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit13</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="zext_ln820" lineNumber="820" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" fileDirectory=".." rtlName="zext_ln820_fu_152_p1" coreId="1970435104" contextFuncName="to_bool" bitwidth="163" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" linenumber="820" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="to_bool"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>shl</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="shl_ln820" lineNumber="820" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" fileDirectory=".." rtlName="shl_ln820_fu_155_p2" coreName="Shifter" implIndex="auto_pipe" control="no" opType="shl" coreId="75" contextFuncName="to_bool" bitwidth="163" opcode="shl" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" linenumber="820" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="to_bool"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="and_ln820" lineNumber="820" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" fileDirectory=".." rtlName="and_ln820_fu_161_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="to_bool" bitwidth="163" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" linenumber="820" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="to_bool"/>
+      <dataInputObjs>shl</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_Result_s" lineNumber="820" originalName="__Result__" fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" fileDirectory=".." rtlName="p_Result_s_fu_166_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="to_bool" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="3.79" m_topoIndex="31" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h" linenumber="820" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="to_bool"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln61" lineNumber="61" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="3877195080" contextFuncName="bf_mult" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="61" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit13</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="D:/vitis/xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h">
+      <validLinenumbers>820</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="47" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit13</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="tmp_V_1_in_in_load_1" coreId="543649385" bitwidth="166" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="tmp_V_1_load" coreId="3877210200" bitwidth="166" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln0" rtlName="grp_bf_mult_2_Pipeline_VITIS_LOOP_33_15_fu_68" coreId="3877209936" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.58" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>bf_mult_2_Pipeline_VITIS_LOOP_33_15</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="p_Val2_6_loc_load" coreId="909784120" bitwidth="166" opcode="load" nodeLabel="6.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="z_V_write_assign_write_ln0" coreId="3877475407" opcode="store" nodeLabel="6.0" m_display="0" m_delay="1.58" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="tmp_V_1_write_ln0" coreId="3877482071" opcode="store" nodeLabel="6.0" m_display="0" m_delay="1.58" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="br_ln0" coreId="3" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit13</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="51" name="_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit13" type="BlockType">
+    <controlInputObjs>_Z6bf_addR6ap_intILi166EERKS0_S3_.3.42.65.137.155.173.252.254.279.283.319.exit</controlInputObjs>
+    <controlInputObjs>.preheader.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="i_15" lineNumber="56" originalName="i" fileName="gf2_arithmetic.cpp" fileDirectory=".." rtlName="i_15_fu_189_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="bf_mult" bitwidth="8" opcode="add" nodeLabel="6.0" m_display="0" m_delay="1.91" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="i_01_write_ln56" lineNumber="56" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="0" contextFuncName="bf_mult" opcode="store" nodeLabel="6.0" m_display="0" m_delay="1.58" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="56" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln0" coreId="3877200488" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>56</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="54" name="block_54" type="BlockType">
+    <controlInputObjs>_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="z_V_write_assign_load" lineNumber="66" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="3877197464" contextFuncName="bf_mult" bitwidth="166" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="66" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="_ln66" lineNumber="66" fileName="gf2_arithmetic.cpp" fileDirectory=".." coreId="3877476277" contextFuncName="bf_mult" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="gf2_arithmetic.cpp" linenumber="66" fileDirectory="C:\HardwareAcceleratedECC-PointMultiplication\ScalarMultiplication\RTL-src" functionName="bf_mult"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gf2_arithmetic.cpp">
+      <validLinenumbers>66</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="tmp_V_3_reg_245">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_V_1_reg_214">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Result_s_reg_254">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="z_V_write_assign_reg_221">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_250">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_79">
+    <nodeIds>18</nodeIds>
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_6_loc_reg_228">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_V_1_in_in_reg_206">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln46_reg_234">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="i_01_reg_199">
+    <nodeIds>2</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_V_3_fu_129">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln46_1_fu_88">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_136">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln820_fu_155">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_15_fu_189">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln820_fu_161">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_6_loc_fu_52">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln46_fu_84">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_V_1_in_in_fu_40">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="z_V_write_assign_fu_48">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln820_fu_152">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Result_s_fu_166">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_V_1_fu_44">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_01_fu_36">
+    <nodeIds>2</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_V_fu_92">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln56_fu_123">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_bf_mult_2_Pipeline_VITIS_LOOP_33_1_fu_62">
+    <nodeIds>31</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_bf_mult_2_Pipeline_VITIS_LOOP_33_15_fu_68">
+    <nodeIds>42</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln56_store_fu_100">
+    <nodeIds>11</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_Val2_6_loc_load_load_fu_176">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_110">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln58_store_fu_144">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_194">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_75">
+    <nodeIds>18</nodeIds>
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_179">
+    <nodeIds>44</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_V_1_load_load_fu_172">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_V_read_1_read_fu_56">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_184">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="z_V_write_assign_load_load_fu_149">
+    <nodeIds>52</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_115">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_fu_120">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_105">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioPorts name="x_V_read">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>53</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="2" stage="1" latency="1"/>
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="2" latency="2"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="31" stage="1" latency="2"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="42" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="bf_mult_2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="650" mMaxLatency="55406">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>16</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_56_1" mII="-1" mDepth="-1" mMinTripCount="162" mMaxTripCount="162" mMinLatency="649" mMaxLatency="55405" mType="1">
+      <basicBlocks>22</basicBlocks>
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>33</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>47</basicBlocks>
+      <basicBlocks>51</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>54</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

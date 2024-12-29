@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:26.231+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_BREADY' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:26.019+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWUSER' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.989+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWREGION' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.962+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWQOS' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.936+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWPROT' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.908+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWCACHE' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.880+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWLOCK' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.852+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWBURST' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.827+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWSIZE' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.802+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWLEN' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.777+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWID' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.751+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWADDR' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.725+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_18/m_axi_gmem_AWVALID' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.698+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_BREADY' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.464+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWUSER' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.439+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWREGION' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.410+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWQOS' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.384+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWPROT' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.357+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWCACHE' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.329+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWLOCK' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.299+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWBURST' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.273+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWSIZE' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.248+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWLEN' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.218+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWID' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.192+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWADDR' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.166+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_17/m_axi_gmem_AWVALID' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:25.139+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_3/m_axi_gmem_ARUSER' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:17.521+0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Radix2wECC_Pipeline_3/m_axi_gmem_ARREGION' to 0." projectName="HardwareAcceleratedECC-PointMultiplication" solutionName="solution1" date="2024-12-26T18:43:17.487+0700" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

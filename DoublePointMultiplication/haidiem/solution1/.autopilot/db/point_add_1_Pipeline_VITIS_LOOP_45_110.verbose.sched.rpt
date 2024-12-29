@@ -1,0 +1,169 @@
+
+
+================================================================
+== Vitis HLS Report for 'point_add_1_Pipeline_VITIS_LOOP_45_110'
+================================================================
+* Date:           Thu Dec 26 19:54:22 2024
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        haidiem
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.664 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      164|      164|  1.640 us|  1.640 us|  164|  164|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_45_1  |      162|      162|         1|          1|          1|   162|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp_V_45_in = alloca i32 1"   --->   Operation 5 'alloca' 'tmp_V_45_in' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%lhs_V = alloca i32 1"   --->   Operation 6 'alloca' 'lhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%lhs_V_25 = alloca i32 1"   --->   Operation 7 'alloca' 'lhs_V_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%c_V_10_cast4_read = read i163 @_ssdm_op_Read.ap_auto.i163, i163 %c_V_10_cast4"   --->   Operation 8 'read' 'c_V_10_cast4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%c_V_9_reload_read = read i165 @_ssdm_op_Read.ap_auto.i165, i165 %c_V_9_reload"   --->   Operation 9 'read' 'c_V_9_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_V_35_read = read i166 @_ssdm_op_Read.ap_auto.i166, i166 %tmp_V_35"   --->   Operation 10 'read' 'tmp_V_35_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.58ns)   --->   "%store_ln0 = store i166 %tmp_V_35_read, i166 %lhs_V_25"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 12 [1/1] (1.58ns)   --->   "%store_ln0 = store i166 %tmp_V_35_read, i166 %lhs_V"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 13 [1/1] (1.58ns)   --->   "%store_ln0 = store i165 %c_V_9_reload_read, i165 %tmp_V_45_in"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 14 [1/1] (1.58ns)   --->   "%store_ln0 = store i8 1, i8 %i"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.i10"   --->   Operation 15 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 6.66>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%i_22 = load i8 %i" [gf2_arithmetic.cpp:45->gf2_arithmetic.cpp:121]   --->   Operation 16 'load' 'i_22' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 17 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.55ns)   --->   "%icmp_ln45 = icmp_eq  i8 %i_22, i8 163" [gf2_arithmetic.cpp:45->gf2_arithmetic.cpp:121]   --->   Operation 18 'icmp' 'icmp_ln45' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 162, i64 162, i64 162"   --->   Operation 19 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln45 = br i1 %icmp_ln45, void %_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.split.i18, void %bf_mult.2.exit.exitStub" [gf2_arithmetic.cpp:45->gf2_arithmetic.cpp:121]   --->   Operation 20 'br' 'br_ln45' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_V_45_in_load = load i165 %tmp_V_45_in" [gf2_arithmetic.cpp:38->gf2_arithmetic.cpp:121]   --->   Operation 21 'load' 'tmp_V_45_in_load' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%lhs_V_load = load i166 %lhs_V"   --->   Operation 22 'load' 'lhs_V_load' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%lhs_V_25_load_1 = load i166 %lhs_V_25" [gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121]   --->   Operation 23 'load' 'lhs_V_25_load_1' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln38 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [gf2_arithmetic.cpp:38->gf2_arithmetic.cpp:121]   --->   Operation 24 'specloopname' 'specloopname_ln38' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_V = bitconcatenate i166 @_ssdm_op_BitConcatenate.i166.i165.i1, i165 %tmp_V_45_in_load, i1 0"   --->   Operation 25 'bitconcatenate' 'tmp_V' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node tmp_V_18)   --->   "%p_Result_s = bitselect i1 @_ssdm_op_BitSelect.i1.i165.i32, i165 %tmp_V_45_in_load, i32 162"   --->   Operation 26 'bitselect' 'p_Result_s' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node tmp_V_18)   --->   "%xor_ln1544 = xor i166 %tmp_V, i166 11692013098647223345629478661730264157247460344009"   --->   Operation 27 'xor' 'xor_ln1544' <Predicate = (!icmp_ln45)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.03> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (1.27ns) (out node of the LUT)   --->   "%tmp_V_18 = select i1 %p_Result_s, i166 %xor_ln1544, i166 %tmp_V" [gf2_arithmetic.cpp:47->gf2_arithmetic.cpp:121]   --->   Operation 28 'select' 'tmp_V_18' <Predicate = (!icmp_ln45)> <Delay = 1.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln38 = trunc i166 %tmp_V_18" [gf2_arithmetic.cpp:38->gf2_arithmetic.cpp:121]   --->   Operation 29 'trunc' 'trunc_ln38' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node p_Result_20)   --->   "%zext_ln820 = zext i8 %i_22"   --->   Operation 30 'zext' 'zext_ln820' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node p_Result_20)   --->   "%shl_ln820 = shl i163 1, i163 %zext_ln820"   --->   Operation 31 'shl' 'shl_ln820' <Predicate = (!icmp_ln45)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 3.14> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node p_Result_20)   --->   "%and_ln820 = and i163 %shl_ln820, i163 %c_V_10_cast4_read"   --->   Operation 32 'and' 'and_ln820' <Predicate = (!icmp_ln45)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.03> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (3.79ns) (out node of the LUT)   --->   "%p_Result_20 = icmp_eq  i163 %and_ln820, i163 0"   --->   Operation 33 'icmp' 'p_Result_20' <Predicate = (!icmp_ln45)> <Delay = 3.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.79> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (1.03ns)   --->   "%ret = xor i166 %tmp_V_18, i166 %lhs_V_load"   --->   Operation 34 'xor' 'ret' <Predicate = (!icmp_ln45)> <Delay = 1.03> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.03> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (1.27ns)   --->   "%select_ln50 = select i1 %p_Result_20, i166 %lhs_V_25_load_1, i166 %ret" [gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121]   --->   Operation 35 'select' 'select_ln50' <Predicate = (!icmp_ln45)> <Delay = 1.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (1.27ns)   --->   "%lhs_V_14 = select i1 %p_Result_20, i166 %lhs_V_load, i166 %ret" [gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121]   --->   Operation 36 'select' 'lhs_V_14' <Predicate = (!icmp_ln45)> <Delay = 1.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (1.91ns)   --->   "%i_23 = add i8 %i_22, i8 1" [gf2_arithmetic.cpp:45->gf2_arithmetic.cpp:121]   --->   Operation 37 'add' 'i_23' <Predicate = (!icmp_ln45)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (1.58ns)   --->   "%store_ln50 = store i166 %select_ln50, i166 %lhs_V_25" [gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121]   --->   Operation 38 'store' 'store_ln50' <Predicate = (!icmp_ln45)> <Delay = 1.58>
+ST_2 : Operation 39 [1/1] (1.58ns)   --->   "%store_ln50 = store i166 %lhs_V_14, i166 %lhs_V" [gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121]   --->   Operation 39 'store' 'store_ln50' <Predicate = (!icmp_ln45)> <Delay = 1.58>
+ST_2 : Operation 40 [1/1] (1.58ns)   --->   "%store_ln38 = store i165 %trunc_ln38, i165 %tmp_V_45_in" [gf2_arithmetic.cpp:38->gf2_arithmetic.cpp:121]   --->   Operation 40 'store' 'store_ln38' <Predicate = (!icmp_ln45)> <Delay = 1.58>
+ST_2 : Operation 41 [1/1] (1.58ns)   --->   "%store_ln45 = store i8 %i_23, i8 %i" [gf2_arithmetic.cpp:45->gf2_arithmetic.cpp:121]   --->   Operation 41 'store' 'store_ln45' <Predicate = (!icmp_ln45)> <Delay = 1.58>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln0 = br void %_ZlSILi166ELb1EER11ap_int_baseIXT_EXT0_EES2_i.exit.i10"   --->   Operation 42 'br' 'br_ln0' <Predicate = (!icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%lhs_V_25_load = load i166 %lhs_V_25"   --->   Operation 43 'load' 'lhs_V_25_load' <Predicate = (icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i166P0A, i166 %lhs_V_25_out, i166 %lhs_V_25_load"   --->   Operation 44 'write' 'write_ln0' <Predicate = (icmp_ln45)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 45 'ret' 'ret_ln0' <Predicate = (icmp_ln45)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	'alloca' operation ('z.V') [8]  (0 ns)
+	'store' operation ('store_ln0') of variable 'tmp_V_35_read' on local variable 'z.V' [12]  (1.59 ns)
+
+ <State 2>: 6.66ns
+The critical path consists of the following:
+	'load' operation ('i', gf2_arithmetic.cpp:45->gf2_arithmetic.cpp:121) on local variable 'i' [18]  (0 ns)
+	'shl' operation ('shl_ln820') [34]  (0 ns)
+	'and' operation ('and_ln820') [35]  (0 ns)
+	'icmp' operation ('__Result__') [36]  (3.8 ns)
+	'select' operation ('z.V', gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121) [38]  (1.28 ns)
+	'store' operation ('store_ln50', gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121) of variable 'z.V', gf2_arithmetic.cpp:50->gf2_arithmetic.cpp:121 on local variable 'z.V' [41]  (1.59 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gf2_arithmetic.hpp" path="C:\HardwareAcceleratedECC-PointMultiplication\DoublePointMultiplication\gf2_arithmetic.hpp"/>
+    <originFiles name="gf2_arithmetic.cpp" path="C:\HardwareAcceleratedECC-PointMultiplication\DoublePointMultiplication\gf2_arithmetic.cpp"/>
+    <originFiles name="dpm.hpp" path="C:\HardwareAcceleratedECC-PointMultiplication\DoublePointMultiplication\dpm.hpp"/>
+    <originFiles name="dpm.cpp" path="C:\HardwareAcceleratedECC-PointMultiplication\DoublePointMultiplication\dpm.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="dpm_test.cpp" path="C:\HardwareAcceleratedECC-PointMultiplication\DoublePointMultiplication\dpm_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
